@@ -1,0 +1,540 @@
+/* 基本樣式 */
+@font-face {
+    font-family: Cubic_11;
+    src: url("./font/web/Cubic_11.woff") format("woff"),
+      url("./font/ttf/Cubic_11.ttf") format("truetype");
+}
+
+body {
+    font-family: "Cubic_11", Cubic_11;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: fixed;
+    background: #d6d5d3;
+    color: #5d1e23;
+    padding: 30px 0; 
+    font-weight: bold;
+    font-size: 2vw;
+}
+.top-marquee {
+    top: 0;
+    
+}
+
+.bottom-marquee {
+    bottom: 0;
+}
+.Slash-1{
+    font-size: 2vw;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    z-index: -1;
+    letter-spacing: -2px; /* 字距縮小 */
+}
+.block-1 {
+    width: 10vw; /* 調整寬度 */
+    position: fixed;
+    text-align: right;
+    top: 100px;
+    right: 30px;
+    z-index: -1;
+}
+.block-2 {
+    width: 20vw; /* 調整寬度 */
+    position: fixed;
+    top: 800px;
+    right: 0px;
+    z-index: -1;
+}
+.block-3 {
+    width: 20vw; /* 調整寬度 */
+    position: fixed;
+    text-align: right;
+    top: 500px;
+    left: 0px;
+    z-index: -1; /* 提高層級，避免被覆蓋 */
+}
+
+.top-marquee {
+    top: 0;
+    
+}
+
+.bottom-marquee {
+    bottom: 0;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+.logo-404 {
+    font-size: 4vw;
+    text-align: left; /* 置左 */
+    padding: 0px 0px 0px 30px;
+    color: #0600ff;
+    animation: typing-404 2s steps(20), blink-404 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #0600ff;
+}
+/* 響應式設計-手機 */
+@media (max-width: 768px) {
+    .marquee {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        position: fixed;
+        background: #d6d5d3;
+        color: #5d1e23;
+        padding: 10px 0;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+    .Slash-1{
+        color: #5d1e23;
+        font-size: 2vw;
+        font-weight: bold;
+        position: fixed;
+        top: 70px;
+        right: 30px;
+        z-index: -1;
+        letter-spacing: -2px; /* 字距縮小 */
+    }
+    .Slash-2{
+        color: #5d1e23;
+        font-size: 2vw;
+        font-weight: bold;
+        position: fixed;
+        top: 500px;
+        right: 120px;
+        z-index: -1;
+        letter-spacing: -2px; /* 字距縮小 */
+    }
+    .Slash-3{
+        color: #5d1e23;
+        font-size: 2vw;
+        font-weight: bold;
+        position: fixed;
+        top: 530px;
+        right: 150px;
+        z-index: -1;
+        letter-spacing: -2px; /* 字距縮小 */
+    }
+    .block-1 {
+        width: 10vw; /* 調整寬度 */
+        position: fixed;
+        text-align: right;
+        top: 100px;
+        right: 80px;
+        z-index: -1;
+    }
+    .block-2 {
+        width: 20vw; /* 調整寬度 */
+        position: fixed;
+        text-align: right;
+        top: 600px;
+        right: 0px;
+        z-index: -1;
+    }
+    .block-3 {
+        width: 20vw; /* 調整寬度 */
+        position: fixed;
+        text-align: right;
+        top: 500px;
+        left: 0px;
+        z-index: -1; /* 提高層級，避免被覆蓋 */
+    }
+    
+}
+
+/* 響應式設計-螢幕 */
+@media (max-width: 1080px) {
+    .Slash-1{
+        color: #5d1e23;
+        font-size: 2vw;
+        font-weight: bold;
+        position: fixed;
+        top: 70px;
+        right: 60px;
+        z-index: -1;
+        letter-spacing: -2px; /* 字距縮小 */
+    }
+    .Slash-2{
+        color: #5d1e23;
+        font-size: 2vw;
+        font-weight: bold;
+        position: fixed;
+        top: 550px;
+        right: 120px;
+        z-index: -1;
+        letter-spacing: -2px; /* 字距縮小 */
+    }
+    .Slash-3{
+        color: #5d1e23;
+        font-size: 2vw;
+        font-weight: bold;
+        position: fixed;
+        top: 600px;
+        right: 150px;
+        z-index: -1;
+        letter-spacing: -2px; /* 字距縮小 */
+    }
+    .block-1 {
+        width: 10vw; /* 調整寬度 */
+        position: fixed;
+        text-align: right;
+        top: 130px;
+        right: 60px;
+        z-index: -1;
+    }
+    .block-2 {
+        width: 20vw; /* 調整寬度 */
+        position: fixed;
+        text-align: right;
+        top: 1300px;
+        right: 0px;
+        z-index: -1;
+    }
+    .block-3 {
+        width: 20vw; /* 調整寬度 */
+        position: fixed;
+        text-align: right;
+        top: 1000px;
+        left: 0px;
+        z-index: -1;
+    }
+    .logo-404 {
+        font-size: 4vw;
+        text-align: left; /* 置左 */
+        margin: 100px 0px 0px 0px;
+        padding: 0px 0px 0px 100px;
+        color: #0600ff;
+        animation: typing-404 2s steps(20), blink-404 0.5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 0.15em solid #0600ff;
+    }
+}
+
+
+@keyframes typing-404 {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-404 {
+    from { border-color: transparent; }
+    to { border-color: #0600ff; }
+}
+.arrow{
+    width: 30vw; /* 調整寬度 */
+}
+.logo-container {
+    padding-top: -20px;
+    justify-content: flex-start; /* 置左 */
+    align-items: center;
+    line-height: -2; /* 減少行距 */
+    padding: 0px 0px 0px 100px;
+}
+
+
+.logo-title {
+    color: #0600ff;
+    font-size: 13vw;
+    line-height: 0; /* 縮短行距 */
+    text-align: right; /* 置右 */
+    animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #0600ff;
+    margin-bottom: -100px;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: #0600ff; }
+}
+
+.logo-text-front {
+    font-size: 2vw;
+    color: #5d1e23;
+    text-align: left; /* 置左 */
+    line-height: 1.5; /* 行距 */
+    position: flex;
+    letter-spacing: -6px; /* 字距縮短 */
+}
+
+.logo-text{
+    font-size: 2vw;
+    color: #5d1e23;
+    text-align: left; /* 置左 */
+    line-height: 2; /* 縮短行距 */
+}
+
+.subtext {
+    font-size: 5vw;
+    display: flex;
+    justify-content: flex-start; /* 置左 */
+    align-items: center;
+    color: #5d1e23;
+    margin-bottom: 100px;
+}
+
+.btn {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    margin: 50px;
+}
+.notice-container-all {
+    margin-top: 50px;
+    padding: 0px;
+    align-items: center; /* 置左 */
+    font-size: 2vw;
+}
+.notice{
+    line-height: -5; /* 減少行距 */
+    text-align: center;
+}
+.notice-title  {
+    color: #0600ff;
+    text-align: center;
+    
+}
+.exclamationmark-gif {
+    height: 30px; /* 調整高度 */
+    vertical-align: middle; /* 垂直對齊中間 */
+}
+.dialog-box {
+    color: #582226;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+    padding: 0px 0px 40px 0px ; /* 添加內邊距 */
+    letter-spacing: 2px; /* 字距加寬 */
+    text-align: left; /* 靠左 */
+    line-height: 0.5; /* 減少行距 */
+    margin-left: -30px;
+}
+
+/* 響應式設計-手機 */
+@media (max-width: 768px) {
+    .notice-container-all {
+        padding: 0px 0px 0px 40px;
+        align-items: flex-start; /* 置左 */
+        font-size: 5vw;
+    }
+    .notice{
+        line-height: -5; /* 減少行距 */
+        text-align: left;
+    }
+    .notice-title  {
+        color: #0600ff;
+        text-align: left;
+    }
+    .exclamationmark-gif {
+        height: 2vw; /* 調整高度 */
+        vertical-align: middle; /* 垂直對齊中間 */
+    }
+    
+    .ul{
+        text-align: left;
+    }
+    .dialog-box {
+        color: #582226;
+        display: inline-block;
+    }
+    
+    li {
+        list-style-type: none;
+        font-size: 2vw; /* 文字跟著螢幕放大 */
+        padding: 0px 0px 60px 0px ; /* 添加內邊距 */
+        letter-spacing: 2px; /* 字距加寬 */
+        text-align: left; /* 靠左 */
+        line-height: 0.5; /* 減少行距 */
+    }
+}
+
+/* 響應式設計-螢幕 */
+@media  (max-width: 1080px) {
+    .notice-container-all {
+        padding: 0px 0px 0px 100px;
+        align-items: flex-start; /* 置左 */
+        font-size: 3vw;
+    }
+    .notice{
+        text-align: left;
+    }
+    .notice-title  {
+        color: #0600ff;
+        text-align: left;
+    }
+    .exclamationmark-gif {
+        height: 50px; /* 調整高度 */
+        vertical-align: middle; /* 垂直對齊中間 */
+    }
+    
+    .ul{
+        text-align: left;
+    }
+    .dialog-box {
+        color: #582226;
+        display: inline-block;
+    }
+    
+    li {
+        list-style-type: none;
+        font-size: 3vw; /* 文字跟著螢幕放大 */
+        padding: 0px 0px 40px 0px ; /* 添加內邊距 */
+        letter-spacing: 2px; /* 字距加寬 */
+        text-align: left; /* 靠左 */
+        line-height: 2vw; /* 減少行距 */
+        
+    }
+}
+.start-btn {
+    margin-top: 50px;
+    font-family: 'cubic_11';
+    font-size: 90px;
+    color: #0600ff;
+    width: 600px;  /* 設定按鈕大小 */
+    height: 200px;
+    background-image: url('./img/btn-1.png'); /* 按鈕背景圖片 */
+    background-size: cover; /* 讓圖片填滿按鈕 */
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none; /* 去除預設邊框 */
+    cursor: pointer;
+    background-color: transparent; /* 背景透明 */
+    animation: pulse 2s infinite; /* 添加動畫 */
+}
+
+.start-btn:hover {
+    color: #582226;
+    background-image: url('./img/btn-2.png'); /* 按鈕背景圖片 */
+    transform: scale(1.1); /* 放大一點點 */
+    transition: transform 0.3s ease-in-out; /* 緩進緩出效果 */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.chat-window {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60vw;
+    background: silver;
+    border: 3px solid black;
+    box-shadow: 1px 1px black;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background: #0600ff;
+    font-size: 30px;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat-header button{
+    border: 2px solid black;
+    background: silver;
+    padding: 4px 14px;
+    font-size: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px black;
+}
+.chat-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    padding: 10px 30px 10px 30px;
+    margin: 10px;
+    border-radius: 100px;
+}
+
+.user {
+    background: #0600ff;
+    align-self: flex-end;
+    color: white;
+    font-size: 30px;
+}
+
+.bot {
+    background: rgb(255, 255, 255);
+    align-self: flex-start;
+    color: #582226;
+    font-size: 30px;
+}
+
+.typing {
+    display: flex;
+    align-items: center;
+  }
+  
+  .typing .dot {
+    width: 10px;
+    height: 10px;
+    margin: 10px 5px;
+    background: #44b4c8;
+    animation: blink 1s infinite;
+  }
+  
+  .typing .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .typing .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+.hidden {
+    display: none;
+}
+
